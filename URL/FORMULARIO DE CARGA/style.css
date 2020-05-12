@@ -64,7 +64,7 @@ article{
     display: inline;
 }
 .derecha ul li img{
-    height: 27px;
+    height: 40px;
     mix-blend-mode:multiply;
     padding: 6px;
 }
@@ -83,6 +83,10 @@ section{
     
     
     
+}
+
+body {
+    background: #faf6e9;
 }
 
 .container p {
@@ -108,17 +112,23 @@ section{
 
 #price {
     margin-top: 30px;
+    
    
 }
+
 
 #quantity {
     margin-top: 30px;
    
 }
 
+.cantidad input {
+width: 100%;
+}
+
 .input-group {
     margin-top: 60px;
-    width: 82%;
+    width: 100%;
     font-family: "Montserrat";
     font-weight: bolder;
     border-color: lightgrey;
@@ -154,7 +164,7 @@ section{
 
 #uploadButton {
     position: relative;
-    top: 80px;
+    top: 300px;
     right: 40px;
     align-items: center;
     font-family: "Montserrat";
@@ -254,7 +264,7 @@ footer{
     display: inline;
 }
 .redes ul li img{
-    height: 27px;
+    height: 40px;
     mix-blend-mode:multiply;
     padding: 6px;
 }
