@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,20 @@
         <div class="row">
 
             <div class="carga col-6"> 
+              
+              <form action="#" method="POST"></form>
+                <p><label for=""><b>PRODUCT NAME</b></label></p>
+                <textarea name="productname" id="productname" cols="50" rows="2"></textarea>
 
+                <form id="descrip" action="#" method="POST"></form>
+                <p><label for=""><b>DESCRIPTION</b></label></p>
+                <textarea name="description" id="description" cols="50" rows="5"></textarea>
+
+                <form id="price" action="#" method="POST"></form>
+                <p class="cantidad">PRICE <input type="number" name="price" min="1" max="100000" step="1"></p>
+
+                <form id="quantity" action="#" method="POST"></form>
+                <p class="cantidad">QUANTITY <input type="number" name="quantity" min="1" max="1000" step="1"></p>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroupFileAddon01">Upload Image</span>
@@ -57,22 +70,10 @@
 
             <div class="datos col-6">
 
-                <form action="#" method="POST"></form>
-                <p><label for=""><b>PRODUCT NAME</b></label></p>
-                <textarea name="productname" id="productname" cols="50" rows="2"></textarea>
+                
 
                 <form action="#" method="POST"></form>
-                <p><label for=""><b>DESCRIPTION</b></label></p>
-                <textarea name="description" id="description" cols="50" rows="5"></textarea>
-
-                <form id="price" action="#" method="POST"></form>
-                <p class="cantidad">PRICE <input type="number" name="price" min="1" max="100000" step="1"></p>
-
-                <form id="quantity" action="#" method="POST"></form>
-                <p class="cantidad">QUANTITY <input type="number" name="quantity" min="1" max="1000" step="1"></p>
-
-                <form action="#" method="POST"></form>
-                <div class="dropdown">
+                <div class="dropdown" id="classification">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      CLASSIFICATION
                     </button>
@@ -81,19 +82,7 @@
                       <a class="dropdown-item" href="#">CLASS2</a>
                       <a class="dropdown-item" href="#">CLASS3</a>
                     </div>
-                  </div>
-
-                <form action="#" method="POST"></form>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      COLOR
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">COLOR1</a>
-                      <a class="dropdown-item" href="#">COLOR2</a>
-                      <a class="dropdown-item" href="#">COLOR3</a>
-                    </div>
-                  </div>
+                  </div> 
 
 
                 <form action="#" method="POST"></form>
@@ -121,6 +110,10 @@
                       <a class="dropdown-item" href="#">XXL</a>
                     </div>
                   </div>
+
+                  <form action="#" method="POST"></form>
+                  <label id ="color" for="muestrario">COLOR:</label>
+                  <input type="color" value="0" id="muestrario"> 
 
                 <a href="#"><button type="button" id="uploadButton" class="btn btn-dark">UPLOAD PRODUCT</button></a>
 

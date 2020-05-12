@@ -78,7 +78,7 @@ section{
     box-sizing: border-box;
     position: relative;
     top:80px;
-    height: 1200px;
+    height: 800px;
     width: 100%;
     
     
@@ -87,7 +87,8 @@ section{
 
 .container p {
     font-family: "Montserrat";
-    color: black;
+    font-size: 15px;
+    color:#494949;
     font-weight: bolder;
 }
 
@@ -101,8 +102,39 @@ section{
     
 }
 
+#descrip {
+    margin-top: 30px;
+}
+
+#price {
+    margin-top: 30px;
+   
+}
+
 #quantity {
-    width: 100%;
+    margin-top: 30px;
+   
+}
+
+.input-group {
+    margin-top: 60px;
+    width: 82%;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    border-color: lightgrey;
+    background: lightgrey;
+
+    
+}
+
+#color {
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: bolder;
+    color: #494949;
+    
+
+
 }
 
 #marca {
@@ -121,8 +153,7 @@ section{
 }
 
 #uploadButton {
-
-    margin-top: 40px;
+    margin-top: 60px;
     font-family: "Montserrat";
     text-align: center;
     color: white;
